@@ -27,6 +27,8 @@ class Ui_self(object):
         self.label.setFont(font1)
         self.shadow_label = QtWidgets.QGraphicsDropShadowEffect(self.label,blurRadius=20,xOffset=1,yOffset=1,color=QtGui.QColor(0, 0, 0))
         self.label.setGraphicsEffect(self.shadow_label)
+        
+
 
         self.label_2 = QtWidgets.QLabel(self.wid)
         self.label_2.setGeometry(QtCore.QRect(230, 350, 921, 100))

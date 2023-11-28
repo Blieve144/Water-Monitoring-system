@@ -7,24 +7,26 @@ class dbadapt:
      def retrieve():
         connection = mysql.connector.connect(
         host="localhost",
-        user="your_username",
-        password="your_password",
-        database="your_database"
+        user="root",
+        password="admin",
+        database="watersys"
         )
         cursor = connection.cursor()
-        select_query = "SELECT * FROM users"
-        cursor.execute(select_query)
-        infor=[]
-        while True:
-            result = cursor.fetchone()
-            infor.append(result)
-            if result==None:
-                break
-        print(infor)
-        print("retrive succesful")
-        cursor.close()
+        print("connected")
+        #select_query = "SELECT * FROM users"
+        #cursor.execute(select_query)
+        #infor=[]
+        #while True:
+        #    print("searching")
+         #   result = cursor.fetchone()
+          #  infor.append(result)
+           # if result==None:
+           #     break
+        #print(infor)
+        #print("retrive succesful")
+        #cursor.close()
         connection.close()
-        return infor
+        #return infor
         
      def store():
         connection = mysql.connector.connect(
